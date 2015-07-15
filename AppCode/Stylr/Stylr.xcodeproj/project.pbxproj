@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB04671B55E67E00488CFE /* AppDelegate.swift */; };
+		F4CB046A1B55E67E00488CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB04691B55E67E00488CFE /* ViewController.swift */; };
+		F4CB046D1B55E67E00488CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CB046B1B55E67E00488CFE /* Main.storyboard */; };
+		F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CB046E1B55E67E00488CFE /* Images.xcassets */; };
+		F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CB04701B55E67E00488CFE /* LaunchScreen.xib */; };
+		F4CB047E1B55E67F00488CFE /* StylrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB047D1B55E67F00488CFE /* StylrTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4CB04781B55E67F00488CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CB045A1B55E67E00488CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CB04611B55E67E00488CFE;
+			remoteInfo = Stylr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4CB04621B55E67E00488CFE /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CB04661B55E67E00488CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CB04671B55E67E00488CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4CB04691B55E67E00488CFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4CB046C1B55E67E00488CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4CB046E1B55E67E00488CFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4CB04711B55E67E00488CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F4CB04771B55E67F00488CFE /* StylrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StylrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CB047C1B55E67F00488CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CB047D1B55E67F00488CFE /* StylrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylrTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4CB045F1B55E67E00488CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CB04741B55E67F00488CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4CB04591B55E67E00488CFE = {
+			isa = PBXGroup;
+			children = (
+				F4CB04641B55E67E00488CFE /* Stylr */,
+				F4CB047A1B55E67F00488CFE /* StylrTests */,
+				F4CB04631B55E67E00488CFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4CB04631B55E67E00488CFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB04621B55E67E00488CFE /* Stylr.app */,
+				F4CB04771B55E67F00488CFE /* StylrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4CB04641B55E67E00488CFE /* Stylr */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB04671B55E67E00488CFE /* AppDelegate.swift */,
+				F4CB04691B55E67E00488CFE /* ViewController.swift */,
+				F4CB046B1B55E67E00488CFE /* Main.storyboard */,
+				F4CB046E1B55E67E00488CFE /* Images.xcassets */,
+				F4CB04701B55E67E00488CFE /* LaunchScreen.xib */,
+				F4CB04651B55E67E00488CFE /* Supporting Files */,
+			);
+			path = Stylr;
+			sourceTree = "<group>";
+		};
+		F4CB04651B55E67E00488CFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB04661B55E67E00488CFE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CB047A1B55E67F00488CFE /* StylrTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB047D1B55E67F00488CFE /* StylrTests.swift */,
+				F4CB047B1B55E67F00488CFE /* Supporting Files */,
+			);
+			path = StylrTests;
+			sourceTree = "<group>";
+		};
+		F4CB047B1B55E67F00488CFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CB047C1B55E67F00488CFE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4CB04611B55E67E00488CFE /* Stylr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CB04811B55E67F00488CFE /* Build configuration list for PBXNativeTarget "Stylr" */;
+			buildPhases = (
+				F4CB045E1B55E67E00488CFE /* Sources */,
+				F4CB045F1B55E67E00488CFE /* Frameworks */,
+				F4CB04601B55E67E00488CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stylr;
+			productName = Stylr;
+			productReference = F4CB04621B55E67E00488CFE /* Stylr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4CB04761B55E67F00488CFE /* StylrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CB04841B55E67F00488CFE /* Build configuration list for PBXNativeTarget "StylrTests" */;
+			buildPhases = (
+				F4CB04731B55E67F00488CFE /* Sources */,
+				F4CB04741B55E67F00488CFE /* Frameworks */,
+				F4CB04751B55E67F00488CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CB04791B55E67F00488CFE /* PBXTargetDependency */,
+			);
+			name = StylrTests;
+			productName = StylrTests;
+			productReference = F4CB04771B55E67F00488CFE /* StylrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4CB045A1B55E67E00488CFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ShopYourWay;
+				TargetAttributes = {
+					F4CB04611B55E67E00488CFE = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F4CB04761B55E67F00488CFE = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F4CB04611B55E67E00488CFE;
+					};
+				};
+			};
+			buildConfigurationList = F4CB045D1B55E67E00488CFE /* Build configuration list for PBXProject "Stylr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4CB04591B55E67E00488CFE;
+			productRefGroup = F4CB04631B55E67E00488CFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4CB04611B55E67E00488CFE /* Stylr */,
+				F4CB04761B55E67F00488CFE /* StylrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4CB04601B55E67E00488CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CB046D1B55E67E00488CFE /* Main.storyboard in Resources */,
+				F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */,
+				F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CB04751B55E67F00488CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4CB045E1B55E67E00488CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CB046A1B55E67E00488CFE /* ViewController.swift in Sources */,
+				F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CB04731B55E67F00488CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CB047E1B55E67F00488CFE /* StylrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4CB04791B55E67F00488CFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CB04611B55E67E00488CFE /* Stylr */;
+			targetProxy = F4CB04781B55E67F00488CFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4CB046B1B55E67E00488CFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CB046C1B55E67E00488CFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4CB04701B55E67E00488CFE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CB04711B55E67E00488CFE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4CB047F1B55E67F00488CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4CB04801B55E67F00488CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CB04821B55E67F00488CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stylr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4CB04831B55E67F00488CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stylr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F4CB04851B55E67F00488CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StylrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stylr.app/Stylr";
+			};
+			name = Debug;
+		};
+		F4CB04861B55E67F00488CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StylrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stylr.app/Stylr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4CB045D1B55E67E00488CFE /* Build configuration list for PBXProject "Stylr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CB047F1B55E67F00488CFE /* Debug */,
+				F4CB04801B55E67F00488CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CB04811B55E67F00488CFE /* Build configuration list for PBXNativeTarget "Stylr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CB04821B55E67F00488CFE /* Debug */,
+				F4CB04831B55E67F00488CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4CB04841B55E67F00488CFE /* Build configuration list for PBXNativeTarget "StylrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CB04851B55E67F00488CFE /* Debug */,
+				F4CB04861B55E67F00488CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4CB045A1B55E67E00488CFE /* Project object */;
+}

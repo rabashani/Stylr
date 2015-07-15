@@ -9,6 +9,14 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    @IBOutlet weak var CatalogItemsCollectionView: UICollectionView!
+    @IBOutlet weak var HeaderImageView: UIImageView!
+    
+    var catalogsViewController = CatalogItemsCollectionViewController();
+    
+
+    
     struct Catalog {
         var Id : CLong = 0
         var Name = ""
@@ -26,6 +34,17 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        //CatalogItemsCollectionView.set
+        CatalogItemsCollectionView.delegate = catalogsViewController;
+        CatalogItemsCollectionView.dataSource = catalogsViewController;
+        
+        var nibName=UINib(nibName: "CollectionViewCell", bundle:nil)
+        CatalogItemsCollectionView.registerNib(nibName, forCellWithReuseIdentifier: "CollectionViewCell")
+        
+        CatalogItemsCollectionView.backgroundColor = UIColor.whiteColor()
+
         
         var catalogs:Array<Catalog> = getCatalogs()
         
@@ -46,7 +65,7 @@ class MainViewController: UIViewController {
         
         if let myURL = NSURL(string: myURLString) {
             var error: NSError?
-            let myHTMLString = NSString(contentsOfURL: myURL, encoding: NSUTF8StringEncoding, error: &error) as String
+            let myHTMLString = NSString(contentsOfURL: myURL, encoding: NSUTF8StringEncoding, error: &error) as! String
             
             // convert String to NSData
             var data: NSData = myHTMLString.dataUsingEncoding(NSUTF8StringEncoding)!
@@ -73,7 +92,7 @@ class MainViewController: UIViewController {
             
             var b:Catalog = Catalog()
             
-            for json in anyObj as Array<AnyObject>{
+            for json in anyObj as! Array<AnyObject>{
                 b.Name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
                 b.Id  =  (json["id"]  as AnyObject? as? CLong) ?? 0
                 b.Image  =  (json["image"]  as AnyObject? as? String) ?? ""
@@ -96,7 +115,7 @@ class MainViewController: UIViewController {
             
             var b:CatalogItem = CatalogItem()
             
-            for json in anyObj as Array<AnyObject>{
+            for json in anyObj as! Array<AnyObject>{
                 b.Name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
                 b.Id  =  (json["id"]  as AnyObject? as? CLong) ?? 0
                 b.ImageUrl  =  (json["imageUrl"]  as AnyObject? as? String) ?? ""

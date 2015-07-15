@@ -1,9 +1,12 @@
 package stylrapp.stylr.com.stylr;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import java.util.List;
@@ -25,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
             public void success(List<Catalog> catalogs, Response response) {
                 Catalog catalog = catalogs.get(0);
                 setCatalogImage(catalog, mainActivity);
-                setCatalogItems(catalog);
+                setCatalogItems(catalog, mainActivity);
             }
 
             @Override
@@ -35,12 +38,15 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    private void setCatalogImage(Catalog catalog, MainActivity context) {
+    private void setCatalogImage(Catalog catalog, Context context) {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         Picasso.with(context).load(catalog.image).into(imageView);
     }
 
-    private void setCatalogItems(Catalog catalog) {
+    private void setCatalogItems(Catalog catalog, Context context) {
+        GridView gridView = (GridView) findViewById(R.id.gridView);
+        ArrayAdapter<CatalogItem> adapter = new ArrayAdapter<CatalogItem>(context, android.R.layout.simple_list_item_1, catalog.items);
+        gridView.setAdapter(adapter);
     }
 
     private void fetchCatalogs(Callback<List<Catalog>> callback) {

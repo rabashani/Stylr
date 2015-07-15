@@ -10,10 +10,23 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var CatalogItemsCollectionView: UICollectionView!
+    @IBOutlet weak var HeaderImageView: UIImageView!
+
+    var catalogsViewController = CatalogItemsCollectionViewController();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //CatalogItemsCollectionView.set
+        CatalogItemsCollectionView.delegate = catalogsViewController;
+        CatalogItemsCollectionView.dataSource = catalogsViewController;
+        
+        var nibName=UINib(nibName: "CollectionViewCell", bundle:nil)
+        CatalogItemsCollectionView.registerNib(nibName, forCellWithReuseIdentifier: "CollectionViewCell")
+        
+        CatalogItemsCollectionView.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,6 +11,9 @@
 		F4380CF71B564EF300A75AF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380CF51B564EF300A75AF4 /* MainViewController.swift */; };
 		F4380CF81B564EF300A75AF4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4380CF61B564EF300A75AF4 /* MainViewController.xib */; };
 		F4380CFA1B56817000A75AF4 /* yourimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4380CF91B56817000A75AF4 /* yourimage.jpg */; };
+		F4380CFC1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */; };
+		F4380D031B56CE3B00A75AF4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */; };
+		F4380D041B56CE3B00A75AF4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */; };
 		F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB04671B55E67E00488CFE /* AppDelegate.swift */; };
 		F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CB046E1B55E67E00488CFE /* Images.xcassets */; };
 		F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CB04701B55E67E00488CFE /* LaunchScreen.xib */; };
@@ -32,6 +35,9 @@
 		F4380CF51B564EF300A75AF4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F4380CF61B564EF300A75AF4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		F4380CF91B56817000A75AF4 /* yourimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yourimage.jpg; sourceTree = "<group>"; };
+		F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogItemsCollectionViewController.swift; sourceTree = "<group>"; };
+		F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		F4CB04621B55E67E00488CFE /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CB04661B55E67E00488CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CB04671B55E67E00488CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +93,11 @@
 				F4380CF31B564DBB00A75AF4 /* yourname-old.jpg */,
 				F4CB04701B55E67E00488CFE /* LaunchScreen.xib */,
 				F4CB04651B55E67E00488CFE /* Supporting Files */,
+				F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */,
 				F4380CF51B564EF300A75AF4 /* MainViewController.swift */,
 				F4380CF61B564EF300A75AF4 /* MainViewController.xib */,
+				F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */,
+				F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */,
 			);
 			path = Stylr;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 			files = (
 				F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */,
 				F4380CFA1B56817000A75AF4 /* yourimage.jpg in Resources */,
+				F4380D041B56CE3B00A75AF4 /* CollectionViewCell.xib in Resources */,
 				F4380CF81B564EF300A75AF4 /* MainViewController.xib in Resources */,
 				F4380CF41B564DBB00A75AF4 /* yourname-old.jpg in Resources */,
 				F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */,
@@ -220,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4380CFC1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift in Sources */,
 				F4380CF71B564EF300A75AF4 /* MainViewController.swift in Sources */,
+				F4380D031B56CE3B00A75AF4 /* CollectionViewCell.swift in Sources */,
 				F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Stylr" customModuleProvider="target">
             <connections>
+                <outlet property="CatalogItemsCollectionView" destination="TDV-BZ-k6w" id="aLL-bd-vC5"/>
+                <outlet property="HeaderImageView" destination="TwK-rd-fnp" id="mXo-Wl-IaP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,7 +43,7 @@
                 <constraint firstItem="TDV-BZ-k6w" firstAttribute="top" secondItem="TwK-rd-fnp" secondAttribute="bottom" constant="28" id="zCZ-tz-r7n"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="638.5" y="480"/>
+            <point key="canvasLocation" x="827.5" y="510"/>
         </view>
     </objects>
     <resources>

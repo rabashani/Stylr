@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import retrofit.Callback;
 import retrofit.RestAdapter;
@@ -45,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
 
     private void setCatalogItems(Catalog catalog, Context context) {
         GridView gridView = (GridView) findViewById(R.id.gridView);
-        ArrayAdapter<CatalogItem> adapter = new ArrayAdapter<CatalogItem>(context, android.R.layout.simple_list_item_1, catalog.items);
+        ImageCustomAdapter adapter = new ImageCustomAdapter(context, android.R.layout.simple_list_item_1, new ArrayList<>(Arrays.asList(catalog.items)));
         gridView.setAdapter(adapter);
     }
 

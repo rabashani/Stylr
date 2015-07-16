@@ -20,10 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var catalogArray = JsonCatalogParser()
         Catalogs.CatalogsArray = catalogArray.getCatalogs()
-        var catalogs:Array<JsonCatalogParser.Catalog> = Catalogs.CatalogsArray
+        var catalogs:Array<Catalog> = Catalogs.CatalogsArray
         
         var controller: MainViewController = MainViewController(nibName: "MainViewController", bundle: nil)
         var navController: UINavigationController = UINavigationController(rootViewController: controller)
+        
+        //navController.navigationBar.barStyle = UIBarStyle.Black
+        
+        var navBarColor = UIColor (red: 35.0/255.0, green: 190.0/255.0, blue: 181.0/255.0, alpha: 1.0)
+        navController.navigationBar.barTintColor = navBarColor
+        navController.navigationBar.topItem?.title = "Stylr"
+        
+        let navbarFont = UIFont(name: "Noteworthy-Bold", size: 30) ?? UIFont.systemFontOfSize(30)
+        navController.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
         
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()

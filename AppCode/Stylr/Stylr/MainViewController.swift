@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         
         CatalogName.text = currentCatalog.Name
         
-        let image_url = NSURL(string: currentCatalog.Image)
+        let image_url = NSURL(string: currentCatalog.Image.stringByReplacingOccurrencesOfString("//", withString: "http://"))
         
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {

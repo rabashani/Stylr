@@ -23,6 +23,6 @@ struct CatalogItem {
 }
 
 struct Catalogs {
-    static var CatalogsArray: Array<JsonCatalogParser.Catalog> = Array<JsonCatalogParser.Catalog>()
+    static var CatalogsArray: Array<Catalog> = Array<Catalog>()
     static var CurrentCatalog: Int = 0
 }

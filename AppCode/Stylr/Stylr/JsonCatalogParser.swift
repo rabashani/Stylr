@@ -10,22 +10,9 @@ import Foundation
 
 class JsonCatalogParser{
     
-    struct Catalog {
-        var Id : CLong = 0
-        var Name = ""
-        var Image = ""
-        var Items: [CatalogItem] = [CatalogItem]()
-    }
-    
-    struct CatalogItem {
-        var Id : CLong  = 0
-        var Name = ""
-        var ImageUrl = ""
-    }
-    
     func getCatalogs() -> Array<Catalog> {
         
-        let myURLString = "http://json.cowchimp.com/catalogs"
+        let myURLString = "http://www.shopyourway.com/__/catalogs/get-catalog-items-by-tag?TagId=18064860"
         var list:Array<Catalog> = []
         
         if let myURL = NSURL(string: myURLString) {
@@ -58,10 +45,10 @@ class JsonCatalogParser{
             var b:Catalog = Catalog()
             
             for json in anyObj as! Array<AnyObject>{
-                b.Name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
-                b.Id  =  (json["id"]  as AnyObject? as? CLong) ?? 0
-                b.Image  =  (json["image"]  as AnyObject? as? String) ?? ""
-                b.Items = self.parseJsonCatalogItems((json["items"] as AnyObject!!))
+                b.Name = (json["CatalogName"] as AnyObject? as? String) ?? "" // to get rid of null
+                b.Id  =  (json["CatalogId"]  as AnyObject? as? CLong) ?? 0
+                b.Image  =  (json["catalogImageUrl"]  as AnyObject? as? String) ?? ""
+                b.Items = self.parseJsonCatalogItems((json["VisualItems"] as AnyObject!!))
                 
                 catalogs.append(b)
             }// for
@@ -81,9 +68,9 @@ class JsonCatalogParser{
             var b:CatalogItem = CatalogItem()
             
             for json in anyObj as! Array<AnyObject>{
-                b.Name = (json["name"] as AnyObject? as? String) ?? "" // to get rid of null
-                b.Id  =  (json["id"]  as AnyObject? as? CLong) ?? 0
-                b.ImageUrl  =  (json["imageUrl"]  as AnyObject? as? String) ?? ""
+                b.Name = (json["Name"] as AnyObject? as? String) ?? "" // to get rid of null
+                b.Id  =  (json["ItemId"]  as AnyObject? as? CLong) ?? 0
+                b.ImageUrl  =  (json["ImageUrl"]  as AnyObject? as? String) ?? ""
                 
                 catalogItems.append(b)
             }// for

@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Stylr" customModuleProvider="target">
             <connections>
                 <outlet property="CatalogItemsCollectionView" destination="TDV-BZ-k6w" id="aLL-bd-vC5"/>
+                <outlet property="CatalogName" destination="auW-9l-8nE" id="mZd-La-jf4"/>
                 <outlet property="HeaderImageView" destination="TwK-rd-fnp" id="mXo-Wl-IaP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,6 +32,12 @@
                         <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auW-9l-8nE">
+                    <rect key="frame" x="15" y="269" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

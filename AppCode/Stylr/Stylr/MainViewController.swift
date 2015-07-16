@@ -13,12 +13,18 @@ class MainViewController: UIViewController {
     @IBOutlet weak var CatalogItemsCollectionView: UICollectionView!
     @IBOutlet weak var HeaderImageView: UIImageView!
     
+    @IBOutlet weak var CatalogName: UILabel!
+    
     var catalogsViewController = CatalogItemsCollectionViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        var currentCatalog = Catalogs.CatalogsArray[Catalogs.CurrentCatalog];
         
-        let image_url = NSURL(string: Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Image)
+        CatalogName.text = currentCatalog.Name
+        
+        let image_url = NSURL(string: currentCatalog.Image)
         
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_async(dispatch_get_global_queue(priority, 0)) {

@@ -1,7 +1,7 @@
 package stylrapp.stylr.com.stylr;
 
 public class CatalogItem {
-    String name;
-    Integer price;
-    String imageUrl;
+    String Name;
+    Double Price;
+    String ImageUrl;
 }

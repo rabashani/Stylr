@@ -5,11 +5,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -43,17 +41,17 @@ public class MainActivity extends ActionBarActivity {
 
     private void setCatalogImage(Catalog catalog, Context context) {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        Picasso.with(context).load(catalog.image).into(imageView);
+        Picasso.with(context).load("http:" + catalog.catalogImageUrl).into(imageView);
     }
 
     private void setCatalogItems(Catalog catalog, Context context) {
         GridView gridView = (GridView) findViewById(R.id.gridView);
-        ImageCustomAdapter adapter = new ImageCustomAdapter(context, android.R.layout.simple_list_item_1, new ArrayList<>(Arrays.asList(catalog.items)));
+        ImageCustomAdapter adapter = new ImageCustomAdapter(context, android.R.layout.simple_list_item_1, new ArrayList<>(Arrays.asList(catalog.VisualItems)));
         gridView.setAdapter(adapter);
     }
 
     private void fetchCatalogs(Callback<List<Catalog>> callback) {
-        RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint("http://json.cowchimp.com").build();
+        RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint("http://www.shopyourway.com").build();
         CatalogService service = restAdapter.create(CatalogService.class);
         service.listCatalogs(callback);
     }

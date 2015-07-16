@@ -1,8 +1,8 @@
 package stylrapp.stylr.com.stylr;
 
 public class Catalog {
-    Integer id;
-    String name;
-    String image;
-    CatalogItem[] items;
+    Integer CatalogId;
+    String CatalogName;
+    String catalogImageUrl;
+    CatalogItem[] VisualItems;
 }

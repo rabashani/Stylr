@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by amit on 15/07/2015.
@@ -53,13 +52,13 @@ public class ImageCustomAdapter extends ArrayAdapter {
         View catalogItemView = inflater.inflate(R.layout.catalog_item, parent, false);
 
         ImageView imageView = (ImageView) catalogItemView.findViewById(R.id.catalogItemImageView);
-        Picasso.with(context).load(item.imageUrl).into(imageView);
+        Picasso.with(context).load(item.ImageUrl).into(imageView);
 
         TextView titleView = (TextView) catalogItemView.findViewById(R.id.catalogItemTitleTextView);
-        titleView.setText(item.name);
+        titleView.setText(item.Name);
 
         TextView priceView = (TextView) catalogItemView.findViewById(R.id.catalogItemPriceTextView);
-        priceView.setText("$" + item.price.toString());
+        priceView.setText("$" + item.Price.toString());
 
         return catalogItemView;
     }

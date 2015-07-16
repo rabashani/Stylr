@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
+        var catalogArray = JsonCatalogParser()
+        Catalogs.CatalogsArray = catalogArray.getCatalogs()
+        var catalogs:Array<JsonCatalogParser.Catalog> = Catalogs.CatalogsArray
+        
         var controller: MainViewController = MainViewController(nibName: "MainViewController", bundle: nil)
         var navController: UINavigationController = UINavigationController(rootViewController: controller)
         

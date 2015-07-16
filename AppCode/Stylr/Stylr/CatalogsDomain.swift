@@ -21,3 +21,8 @@ struct CatalogItem {
     var Name = ""
     var ImageUrl = ""
 }
+
+struct Catalogs {
+    static var CatalogsArray: Array<JsonCatalogParser.Catalog> = Array<JsonCatalogParser.Catalog>()
+    static var CurrentCatalog: Int = 0
+}

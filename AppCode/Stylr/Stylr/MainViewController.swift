@@ -28,9 +28,7 @@ class MainViewController: UIViewController {
         
         CatalogItemsCollectionView.backgroundColor = UIColor.whiteColor()
 
-        var catalogArray = JsonCatalogParser()
-        var catalogs:Array<JsonCatalogParser.Catalog> = catalogArray.getCatalogs()
-        
+       
         // Do any additional setup after loading the view.
     }
 

@@ -34,7 +34,7 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     //#warning Incomplete method implementation -- Return the number of items in the section
-    return 50
+        return Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Items.count
     }
     
 
@@ -44,14 +44,20 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
     {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
     
-        let title = self.titles[indexPath.row % 5]
+        let item = Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Items[indexPath.row]
+        cell.title.text = item.Name
+        cell.imageView.image = UIImage(named: item.ImageUrl)
+        
+        return cell
+        
+        /*let title = self.titles[indexPath.row % 5]
         cell.title.text = title
         
         let curr = indexPath.row % 5  + 1
         let imgName = "pin\(curr).jpg"
         cell.imageView.image = UIImage(named: imgName)
     
-        return cell
+        return cell*/
     }
 
     /*

@@ -18,6 +18,9 @@
 		F4380D091B5701B600A75AF4 /* CatalogsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380D081B5701B600A75AF4 /* CatalogsDomain.swift */; };
 		F489F66A1B57ABE200B6920F /* CatalogsPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489F6681B57ABE200B6920F /* CatalogsPagerViewController.swift */; };
 		F489F66B1B57ABE200B6920F /* CatalogsPagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F489F6691B57ABE200B6920F /* CatalogsPagerViewController.xib */; };
+		F489F66E1B57C7F000B6920F /* StylrListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489F66C1B57C7F000B6920F /* StylrListViewController.swift */; };
+		F489F66F1B57C7F000B6920F /* StylrListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F489F66D1B57C7F000B6920F /* StylrListViewController.xib */; };
+		F489F6711B57D21600B6920F /* StylrCatalogsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489F6701B57D21600B6920F /* StylrCatalogsCollectionViewController.swift */; };
 		F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB04671B55E67E00488CFE /* AppDelegate.swift */; };
 		F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CB046E1B55E67E00488CFE /* Images.xcassets */; };
 		F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CB04701B55E67E00488CFE /* LaunchScreen.xib */; };
@@ -46,6 +49,9 @@
 		F4380D081B5701B600A75AF4 /* CatalogsDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogsDomain.swift; sourceTree = "<group>"; };
 		F489F6681B57ABE200B6920F /* CatalogsPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatalogsPagerViewController.swift; path = ../CatalogsPagerViewController.swift; sourceTree = "<group>"; };
 		F489F6691B57ABE200B6920F /* CatalogsPagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CatalogsPagerViewController.xib; path = ../CatalogsPagerViewController.xib; sourceTree = "<group>"; };
+		F489F66C1B57C7F000B6920F /* StylrListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylrListViewController.swift; sourceTree = SOURCE_ROOT; };
+		F489F66D1B57C7F000B6920F /* StylrListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StylrListViewController.xib; sourceTree = SOURCE_ROOT; };
+		F489F6701B57D21600B6920F /* StylrCatalogsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylrCatalogsCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		F4CB04621B55E67E00488CFE /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CB04661B55E67E00488CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CB04671B55E67E00488CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,11 +117,14 @@
 				F4CB04671B55E67E00488CFE /* AppDelegate.swift */,
 				F4CB04701B55E67E00488CFE /* LaunchScreen.xib */,
 				F4CB04651B55E67E00488CFE /* Supporting Files */,
+				F489F6701B57D21600B6920F /* StylrCatalogsCollectionViewController.swift */,
 				F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */,
 				F4380CF51B564EF300A75AF4 /* MainViewController.swift */,
 				F4380CF61B564EF300A75AF4 /* MainViewController.xib */,
 				F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */,
 				F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */,
+				F489F66C1B57C7F000B6920F /* StylrListViewController.swift */,
+				F489F66D1B57C7F000B6920F /* StylrListViewController.xib */,
 				F489F6681B57ABE200B6920F /* CatalogsPagerViewController.swift */,
 				F489F6691B57ABE200B6920F /* CatalogsPagerViewController.xib */,
 			);
@@ -232,6 +241,7 @@
 				F4380D041B56CE3B00A75AF4 /* CollectionViewCell.xib in Resources */,
 				F4380CF81B564EF300A75AF4 /* MainViewController.xib in Resources */,
 				F4380CF41B564DBB00A75AF4 /* yourname-old.jpg in Resources */,
+				F489F66F1B57C7F000B6920F /* StylrListViewController.xib in Resources */,
 				F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */,
 				F489F66B1B57ABE200B6920F /* CatalogsPagerViewController.xib in Resources */,
 			);
@@ -252,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4380D071B56FE8300A75AF4 /* JsonCatalogParser.swift in Sources */,
+				F489F6711B57D21600B6920F /* StylrCatalogsCollectionViewController.swift in Sources */,
+				F489F66E1B57C7F000B6920F /* StylrListViewController.swift in Sources */,
 				F4380D091B5701B600A75AF4 /* CatalogsDomain.swift in Sources */,
 				F4380CFC1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift in Sources */,
 				F4380CF71B564EF300A75AF4 /* MainViewController.swift in Sources */,

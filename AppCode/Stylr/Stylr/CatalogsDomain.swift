@@ -20,6 +20,7 @@ struct CatalogItem {
     var Id : CLong  = 0
     var Name = ""
     var ImageUrl = ""
+    var Price: Double = 0.0
 }
 
 struct Catalogs {

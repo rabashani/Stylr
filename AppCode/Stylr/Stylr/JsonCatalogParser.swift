@@ -47,7 +47,7 @@ class JsonCatalogParser{
             for json in anyObj as! Array<AnyObject>{
                 b.Name = (json["CatalogName"] as AnyObject? as? String) ?? "" // to get rid of null
                 b.Id  =  (json["CatalogId"]  as AnyObject? as? CLong) ?? 0
-                b.Image  =  (json["catalogImageUrl"]  as AnyObject? as? String) ?? ""
+                b.Image  =  (json["CatalogImageUrl"]  as AnyObject? as? String) ?? ""
                 b.Items = self.parseJsonCatalogItems((json["VisualItems"] as AnyObject!!))
                 
                 catalogs.append(b)
@@ -71,7 +71,8 @@ class JsonCatalogParser{
                 b.Name = (json["Name"] as AnyObject? as? String) ?? "" // to get rid of null
                 b.Id  =  (json["ItemId"]  as AnyObject? as? CLong) ?? 0
                 b.ImageUrl  =  (json["ImageUrl"]  as AnyObject? as? String) ?? ""
-                
+                b.Price = (json["Price"]  as AnyObject? as? Double) ?? 0.0
+            
                 catalogItems.append(b)
             }// for
             

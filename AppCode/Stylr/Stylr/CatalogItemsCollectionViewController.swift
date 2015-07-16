@@ -44,6 +44,7 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
     
         let item = Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Items[indexPath.row]
         cell.title.text = item.Name
+        cell.price.text = String(format:"$%.2f",item.Price)
         
       
         let image_url = NSURL(string: item.ImageUrl)

@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,13 +47,20 @@ public class ImageCustomAdapter extends ArrayAdapter {
 //        holder.txtTitle.setText(item.getTitle());
 //        holder.imageItem.setImageBitmap(item.getImage());
 //        return row;
-        TextView textView = new TextView(context);
-        textView.setText(data.get(position).name);
-        return textView;
-    }
+        CatalogItem item = data.get(position);
 
-    static class RecordHolder {
-        TextView txtTitle;
-        ImageView imageItem;
+        LayoutInflater inflater = ((Activity) context).getLayoutInflater();
+        View catalogItemView = inflater.inflate(R.layout.catalog_item, parent, false);
+
+        ImageView imageView = (ImageView) catalogItemView.findViewById(R.id.catalogItemImageView);
+        Picasso.with(context).load(item.imageUrl).into(imageView);
+
+        TextView titleView = (TextView) catalogItemView.findViewById(R.id.catalogItemTitleTextView);
+        titleView.setText(item.name);
+
+        TextView priceView = (TextView) catalogItemView.findViewById(R.id.catalogItemPriceTextView);
+        priceView.setText("$" + item.price.toString());
+
+        return catalogItemView;
     }
 }

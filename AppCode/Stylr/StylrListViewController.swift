@@ -15,8 +15,8 @@ class StylrListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var catalogsViewController = CatalogItemsCollectionViewController()
-        var catalogs = Catalogs.CatalogsArray[Catalogs.CurrentCatalog]
+        var catalogsViewController = StylrCatalogsCollectionViewController()
+        //var catalogs = Catalogs.CatalogsArray[Catalogs.CurrentCatalog]
         
         // Do any additional setup after loading the view.
         //CatalogItemsCollectionView.set

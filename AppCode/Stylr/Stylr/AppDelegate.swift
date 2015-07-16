@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var catalogs:Array<Catalog> = Catalogs.CatalogsArray
         
         var controller: MainViewController = MainViewController(nibName: "MainViewController", bundle: nil)
+        
+//        var controller: StylrListViewController = StylrListViewController (nibName:"StylrListViewController", bundle:nil)
+        
         var navController: UINavigationController = UINavigationController(rootViewController: controller)
         
         //navController.navigationBar.barStyle = UIBarStyle.Black

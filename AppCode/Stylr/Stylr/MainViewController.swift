@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var CatalogItemsCollectionView: UICollectionView!
     @IBOutlet weak var HeaderImageView: UIImageView!
-    
     @IBOutlet weak var CatalogName: UILabel!
     
     var catalogsViewController = CatalogItemsCollectionViewController()

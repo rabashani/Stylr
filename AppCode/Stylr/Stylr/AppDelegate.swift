@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController.navigationBar.topItem?.title = "Stylr"
         
         let navbarFont = UIFont(name: "Noteworthy-Bold", size: 30) ?? UIFont.systemFontOfSize(30)
-        navController.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.whiteColor()]
+        navController.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.blackColor()]
         
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()

@@ -19,6 +19,12 @@
             android:id="@+id/imageView"
             android:minHeight="100dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextView"
+            android:layout_gravity="center_horizontal" />
+
         <GridView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

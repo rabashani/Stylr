@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,6 +31,7 @@ public class MainActivity extends ActionBarActivity {
             public void success(List<Catalog> catalogs, Response response) {
                 Catalog catalog = catalogs.get(0);
                 setCatalogImage(catalog, mainActivity);
+                setCatalogTitle(catalog, mainActivity);
                 setCatalogItems(catalog, mainActivity);
             }
 
@@ -42,6 +45,11 @@ public class MainActivity extends ActionBarActivity {
     private void setCatalogImage(Catalog catalog, Context context) {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
         Picasso.with(context).load("http:" + catalog.catalogImageUrl).into(imageView);
+    }
+
+    private void setCatalogTitle(Catalog catalog, MainActivity mainActivity) {
+        TextView textView = (TextView) findViewById(R.id.titleTextView);
+        textView.setText(catalog.CatalogName);
     }
 
     private void setCatalogItems(Catalog catalog, Context context) {

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/catalogItemTitleTextView"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal" />
 
     <TextView
@@ -22,5 +23,6 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/catalogItemPriceTextView"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

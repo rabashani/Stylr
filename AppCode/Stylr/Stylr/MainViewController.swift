@@ -18,6 +18,21 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let image_url = NSURL(string: Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Image)
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            // do some task
+            let image_data = NSData(contentsOfURL: image_url!)
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                // update some UI
+                let image = UIImage(data: image_data!)
+                self.HeaderImageView.image = image
+            }
+        }
+        
+        
         // Do any additional setup after loading the view.
         //CatalogItemsCollectionView.set
         CatalogItemsCollectionView.delegate = catalogsViewController;

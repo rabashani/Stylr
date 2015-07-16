@@ -46,7 +46,29 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
     
         let item = Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Items[indexPath.row]
         cell.title.text = item.Name
-        cell.imageView.image = UIImage(named: item.ImageUrl)
+        
+        
+//        let image_url = NSURL(string: item.ImageUrl)
+//        let image_data = NSData(contentsOfURL: image_url!)
+//        let image = UIImage(data: image_data!)
+//        cell.imageView.image = image
+        
+      
+        let image_url = NSURL(string: item.ImageUrl)
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            // do some task
+            let image_data = NSData(contentsOfURL: image_url!)
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                // update some UI
+                let image = UIImage(data: image_data!)
+                cell.imageView.image = image
+            }
+        }
+        
+        
         
         return cell
         

@@ -2,6 +2,8 @@ package stylrapp.stylr.com.stylr;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,10 +48,20 @@ public class ImageCustomAdapter extends ArrayAdapter {
 //        holder.txtTitle.setText(item.getTitle());
 //        holder.imageItem.setImageBitmap(item.getImage());
 //        return row;
-        CatalogItem item = data.get(position);
+        final CatalogItem item = data.get(position);
 
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
         View catalogItemView = inflater.inflate(R.layout.catalog_item, parent, false);
+        final long itemId = item.ItemId;
+
+        catalogItemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://www.shopyourway.com/m/product/" + itemId;
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                context.startActivity(launchBrowser);
+            }
+        });
 
         ImageView imageView = (ImageView) catalogItemView.findViewById(R.id.catalogItemImageView);
         Picasso.with(context).load(item.ImageUrl).into(imageView);

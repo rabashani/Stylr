@@ -44,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
 
     private void setCatalogImage(Catalog catalog, Context context) {
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        Picasso.with(context).load("http:" + catalog.catalogImageUrl).into(imageView);
+        Picasso.with(context).load("http:" + catalog.CatalogImageUrl).into(imageView);
     }
 
     private void setCatalogTitle(Catalog catalog, MainActivity mainActivity) {

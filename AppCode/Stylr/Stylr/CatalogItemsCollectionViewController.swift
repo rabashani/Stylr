@@ -12,8 +12,6 @@ import UIKit
 let reuseIdentifier = "CollectionViewCell"
 
 class CatalogItemsCollectionViewController: UICollectionViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
-    let titles = ["Sand Harbor, Lake Tahoe - California","Beautiful View of Manhattan skyline.","Watcher in the Fog","Great Smoky Mountains National Park, Tennessee","Most beautiful place"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +45,6 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
         let item = Catalogs.CatalogsArray[Catalogs.CurrentCatalog].Items[indexPath.row]
         cell.title.text = item.Name
         
-        
-//        let image_url = NSURL(string: item.ImageUrl)
-//        let image_data = NSData(contentsOfURL: image_url!)
-//        let image = UIImage(data: image_data!)
-//        cell.imageView.image = image
-        
       
         let image_url = NSURL(string: item.ImageUrl)
         
@@ -68,18 +60,7 @@ class CatalogItemsCollectionViewController: UICollectionViewController, UICollec
             }
         }
         
-        
-        
         return cell
-        
-        /*let title = self.titles[indexPath.row % 5]
-        cell.title.text = title
-        
-        let curr = indexPath.row % 5  + 1
-        let imgName = "pin\(curr).jpg"
-        cell.imageView.image = UIImage(named: imgName)
-    
-        return cell*/
     }
 
     /*

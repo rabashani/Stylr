@@ -55,11 +55,18 @@ public class ImageCustomAdapter extends ArrayAdapter {
         Picasso.with(context).load(item.ImageUrl).into(imageView);
 
         TextView titleView = (TextView) catalogItemView.findViewById(R.id.catalogItemTitleTextView);
-        titleView.setText(item.Name);
+        titleView.setText(getSimplifiedName(item.Name));
 
         TextView priceView = (TextView) catalogItemView.findViewById(R.id.catalogItemPriceTextView);
         priceView.setText("$" + item.Price.toString());
 
         return catalogItemView;
+    }
+
+    private String getSimplifiedName(String name) {
+        String[] splitted = name.split("\\s+");
+        if(splitted.length < 2)
+            return splitted[0];
+        return splitted[0] + " " + splitted[1];
     }
 }

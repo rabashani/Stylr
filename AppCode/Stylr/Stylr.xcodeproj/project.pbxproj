@@ -14,6 +14,8 @@
 		F4380CFC1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */; };
 		F4380D031B56CE3B00A75AF4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */; };
 		F4380D041B56CE3B00A75AF4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */; };
+		F4380D071B56FE8300A75AF4 /* JsonCatalogParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380D061B56FE8300A75AF4 /* JsonCatalogParser.swift */; };
+		F4380D091B5701B600A75AF4 /* CatalogsDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4380D081B5701B600A75AF4 /* CatalogsDomain.swift */; };
 		F4CB04681B55E67E00488CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CB04671B55E67E00488CFE /* AppDelegate.swift */; };
 		F4CB046F1B55E67E00488CFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CB046E1B55E67E00488CFE /* Images.xcassets */; };
 		F4CB04721B55E67E00488CFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CB04701B55E67E00488CFE /* LaunchScreen.xib */; };
@@ -38,6 +40,8 @@
 		F4380CFB1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogItemsCollectionViewController.swift; sourceTree = "<group>"; };
 		F4380D011B56CE3B00A75AF4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F4380D021B56CE3B00A75AF4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		F4380D061B56FE8300A75AF4 /* JsonCatalogParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonCatalogParser.swift; sourceTree = "<group>"; };
+		F4380D081B5701B600A75AF4 /* CatalogsDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogsDomain.swift; sourceTree = "<group>"; };
 		F4CB04621B55E67E00488CFE /* Stylr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stylr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CB04661B55E67E00488CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CB04671B55E67E00488CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4380D051B56FE3B00A75AF4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4380D061B56FE8300A75AF4 /* JsonCatalogParser.swift */,
+				F4380D081B5701B600A75AF4 /* CatalogsDomain.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		F4CB04591B55E67E00488CFE = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 		F4CB04641B55E67E00488CFE /* Stylr */ = {
 			isa = PBXGroup;
 			children = (
+				F4380D051B56FE3B00A75AF4 /* Utils */,
 				F4380CF91B56817000A75AF4 /* yourimage.jpg */,
 				F4CB04671B55E67E00488CFE /* AppDelegate.swift */,
 				F4CB046E1B55E67E00488CFE /* Images.xcassets */,
@@ -230,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4380D071B56FE8300A75AF4 /* JsonCatalogParser.swift in Sources */,
+				F4380D091B5701B600A75AF4 /* CatalogsDomain.swift in Sources */,
 				F4380CFC1B569D2400A75AF4 /* CatalogItemsCollectionViewController.swift in Sources */,
 				F4380CF71B564EF300A75AF4 /* MainViewController.swift in Sources */,
 				F4380D031B56CE3B00A75AF4 /* CollectionViewCell.swift in Sources */,

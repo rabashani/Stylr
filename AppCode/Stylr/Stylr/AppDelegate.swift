@@ -36,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navbarFont = UIFont(name: "Noteworthy-Bold", size: 30) ?? UIFont.systemFontOfSize(30)
         navController.navigationBar.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:UIColor.blackColor()]
+       
+        application.statusBarHidden = true
         
         self.window!.rootViewController = navController
         self.window!.makeKeyAndVisible()
@@ -63,7 +65,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

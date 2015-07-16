@@ -13,12 +13,16 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
+
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class MainActivity extends ActionBarActivity {
+
+    private Random rand = new Random(System.currentTimeMillis());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
         fetchCatalogs(new Callback<List<Catalog>>() {
             @Override
             public void success(List<Catalog> catalogs, Response response) {
-                Catalog catalog = catalogs.get(0);
+                Catalog catalog = catalogs.get(rand.nextInt(10));
                 setCatalogImage(catalog, mainActivity);
                 setCatalogTitle(catalog, mainActivity);
                 setCatalogItems(catalog, mainActivity);
